@@ -1,0 +1,41 @@
+.home {
+  padding-top: 80px;
+}
+
+/* Hero section spacing */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Featured portfolio section */
+.featured-section {
+  background-color: var(--secondary-black);
+  position: relative;
+}
+
+.featured-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent-gold), transparent);
+}
+
+/* Testimonials section */
+.testimonials-section {
+  background-color: var(--primary-black);
+  position: relative;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .home {
+    padding-top: 60px;
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Rajesh-photography/static/css/main.57d53af4.css",
+    "main.js": "/Rajesh-photography/static/js/main.cb2b6f06.js",
+    "static/media/varun .jpg": "/Rajesh-photography/static/media/varun .dfa9bb2762bbb22baf46.jpg",
+    "index.html": "/Rajesh-photography/index.html",
+    "main.57d53af4.css.map": "/Rajesh-photography/static/css/main.57d53af4.css.map",
+    "main.cb2b6f06.js.map": "/Rajesh-photography/static/js/main.cb2b6f06.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.57d53af4.css",
+    "static/js/main.cb2b6f06.js"
+  ]
+}

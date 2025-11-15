@@ -1,0 +1,77 @@
+.home {
+  padding-top: 80px;
+}
+
+/* Hero section spacing */
+.hero-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Featured portfolio section */
+.featured-section {
+  background-color: var(--secondary-black);
+  position: relative;
+}
+
+.featured-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent-gold), transparent);
+}
+
+/* Branding section */
+.branding-section {
+  background-color: var(--primary-black);
+  padding: 60px 0;
+  position: relative;
+}
+
+.branding-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--accent-gold), transparent);
+}
+
+.branding-text {
+  text-align: center;
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: var(--text-light-gray);
+  max-width: 900px;
+  margin: 0 auto;
+  font-weight: 400;
+}
+
+/* Testimonials section */
+.testimonials-section {
+  background-color: var(--primary-black);
+  position: relative;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .home {
+    padding-top: 60px;
+  }
+  
+  .branding-section {
+    padding: 40px 0;
+  }
+  
+  .branding-text {
+    font-size: 1.1rem;
+    line-height: 1.7;
+  }
+}

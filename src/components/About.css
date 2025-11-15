@@ -1,0 +1,284 @@
+.about {
+  padding-top: 80px;
+}
+
+.about-hero {
+  background-color: var(--secondary-black);
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.about-text {
+  max-width: 600px;
+}
+
+.about-intro {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: var(--text-light-gray);
+}
+
+.about-description {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+  color: var(--text-light-gray);
+}
+
+.about-philosophy {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: var(--text-light-gray);
+  font-style: italic;
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+}
+
+.image-container {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.photographer-image {
+  width: 400px;
+  height: 500px;
+  object-fit: cover;
+  transition: var(--transition-smooth);
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    45deg,
+    rgba(212, 175, 55, 0.2),
+    rgba(212, 175, 55, 0.1)
+  );
+  pointer-events: none;
+}
+
+.achievements-section {
+  background-color: var(--primary-black);
+}
+
+.achievements-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.achievement-card {
+  background-color: var(--secondary-black);
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  border: 1px solid var(--border-color);
+  transition: var(--transition-smooth);
+}
+
+.achievement-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  border-color: var(--accent-gold);
+}
+
+.achievement-icon {
+  font-size: 3rem;
+  color: var(--accent-gold);
+  margin-bottom: 1rem;
+}
+
+.achievement-count {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--text-white);
+  margin-bottom: 0.5rem;
+}
+
+.achievement-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--accent-gold);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.achievement-description {
+  font-size: 0.9rem;
+  color: var(--text-gray);
+  line-height: 1.5;
+}
+
+.skills-section {
+  background-color: var(--secondary-black);
+}
+
+.skills-container {
+  max-width: 800px;
+  margin: 3rem auto 0;
+}
+
+.skill-item {
+  margin-bottom: 2rem;
+}
+
+.skill-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.skill-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-white);
+}
+
+.skill-percentage {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--accent-gold);
+}
+
+.skill-bar {
+  width: 100%;
+  height: 8px;
+  background-color: var(--border-color);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.skill-progress {
+  height: 100%;
+  background: linear-gradient(90deg, var(--accent-gold), var(--accent-gold-light));
+  border-radius: 4px;
+  transition: width 1s ease-in-out;
+}
+
+.story-section {
+  background-color: var(--primary-black);
+}
+
+.story-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.story-text h2 {
+  margin-bottom: 2rem;
+}
+
+.story-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  color: var(--text-light-gray);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about {
+    padding-top: 60px;
+  }
+
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .about-text {
+    order: 2;
+  }
+
+  .about-image {
+    order: 1;
+  }
+
+  .photographer-image {
+    width: 300px;
+    height: 400px;
+  }
+
+  .achievements-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .achievement-card {
+    padding: 1.5rem;
+  }
+
+  .achievement-icon {
+    font-size: 2.5rem;
+  }
+
+  .achievement-count {
+    font-size: 2rem;
+  }
+
+  .skills-container {
+    margin-top: 2rem;
+  }
+
+  .skill-item {
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-intro,
+  .about-description,
+  .about-philosophy {
+    font-size: 1rem;
+  }
+
+  .photographer-image {
+    width: 250px;
+    height: 350px;
+  }
+
+  .achievements-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .achievement-card {
+    padding: 1rem;
+  }
+
+  .achievement-icon {
+    font-size: 2rem;
+  }
+
+  .achievement-count {
+    font-size: 1.5rem;
+  }
+
+  .achievement-title {
+    font-size: 1rem;
+  }
+
+  .story-text p {
+    font-size: 1rem;
+  }
+}

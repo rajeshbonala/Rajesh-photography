@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://rajeshbonala.github.io/Rajesh-photography/sitemap.xml
+
